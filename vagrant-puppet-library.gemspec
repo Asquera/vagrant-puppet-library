@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = Vagrant::Puppet::Library::VERSION
   spec.authors       = ["Felix Gilcher"]
   spec.email         = ["felix.gilcher@asquera.de"]
+  spec.license       = 'MIT'
+  spec.homepage      = "https://github.com/Asquera/vagrant-puppet-library"
   spec.summary       = %q{Run puppet-library in your Vagrantfiles}
   spec.description   = %q{A plugin to vagrant that allows running a private puppetforge (puppet-library) inside a vagrant env.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
