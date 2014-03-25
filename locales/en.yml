@@ -1,0 +1,5 @@
+en:
+  vagrant:
+    errors:
+      puppet_library_boot_failed: "Booting the puppet library failed, please check host and port parameters."
+   

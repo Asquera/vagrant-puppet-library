@@ -22,6 +22,10 @@ DESC
          Command::Forge
       end
 
+      action_hook "start_puppet_library" do |hook|
+        require_relative "action/boot_puppet_library" 
+        hook.before VagrantPlugins::LibrarianPuppet::Action::Install, Action::BootPuppetLibrary
+      end
 
       config "puppet_library" do
         require_relative "config"
